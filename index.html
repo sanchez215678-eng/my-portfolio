@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sanchez Tech — Modern web & app experiences</title>
+    <meta name="description" content="Sanchez Tech builds fast, responsive landing pages and small web apps—clean UI, smooth animations, and performance-focused code." />
+    <meta name="keywords" content="Sanchez Tech, web development, landing pages, responsive design, performance, UI, front-end, programming" />
+    <meta name="author" content="Sanchez Tech" />
+    <meta property="og:title" content="Sanchez Tech — Modern web & app experiences" />
+    <meta property="og:description" content="We build fast, responsive landing pages and small web apps focused on clarity and performance." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/?programming,code" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+    <!-- JSON-LD Structured Data for better Google understanding -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Sanchez Tech",
+            "url": "https://sanchez.tech",
+            "logo": "https://sanchez.tech/logo.svg",
+            "contactPoint": [{
+                    "@type": "ContactPoint",
+
+                    "telephone": "+2349071067665",
+                    "contactType": "customer service",
+                    "email": "nwekezembudike@gmail.com"
+                }
+            }
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <div style="background:#fffbeb;color:#92400e;padding:.6rem;text-align:center;font-weight:600">JavaScript is disabled in your browser — for the best experience enable JavaScript to see the live carousel and interactive features.</div>
+    </noscript>
+    <header>
+        <div class="top-row">
+            <div class="brand">
+                <a href="#top" style="display:inline-flex;align-items:center"><img src="logo.svg" alt="Sanchez Tech logo" class="logo" width="140" height="35"></a>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav class="site-nav" id="siteNav">
+                <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Home</a>
+                <a href="#features" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'});return false">Features</a>
+                <a href="main.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false">Contact</a>
+            </nav>
+        </div>
+
+        <div>
+            <h1 id="top">Sanchez Tech</h1>
+            <p>We create modern web & app experiences for startups and businesses — fast, responsive landing pages, clear UI and smooth animations that convert visitors into customers.</p>
+            <ul style="list-style:none;margin-top:1rem;display:inline-block;text-align:left;line-height:1.6;opacity:.95;">
+                <li>• Lightweight, accessible HTML/CSS</li>
+                <li>• Smooth, non-distracting animations</li>
+                <li>• Easy to customize and deploy</li>
+            </ul>
+            <div style="margin-top:1.25rem">
+                <button id="get-started-btn" onclick="document.getElementById('get-started').scrollIntoView({behavior:'smooth'})">Get Started</button>
+            </div>
+            <div class="hero-accent" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="features">
+            <!-- Auto-scrolling image carousel -->
+            <div class="carousel" aria-hidden="false">
+                <!-- carousel-inner will be populated from images/manifest.json when available.
+               Fallback uses Unsplash queries for visual placeholders. -->
+                <div id="carouselInner" class="carousel-inner" aria-hidden="true">
+                    <!-- Fallback static images (use project-root images if present). JS will replace these when a manifest is available. -->
+                    <figure>
+                        <img loading="lazy" src="b.jpg" alt="Feature image 1">
+                        <figcaption>Feature image 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img loading="lazy" src="bun.jpg" alt="Feature image 2">
+                        <figcaption>Feature image 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img loading="lazy" src="d.jpg" alt="Feature image 3">
+                        <figcaption>Feature image 3</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="card">
+                    <img class="feature-img" data-feature-index="0" src="https://source.unsplash.com/400x260/?frontend,ui" alt="UI mockup" style="width:100%;border-radius:8px;margin-bottom:12px">
+                    <h3>Landing Pages</h3>
+                    <p>Ready-made hero sections and CTAs tailored to boost conversions for your product.</p>
+                </div>
+                <div class="card">
+                    <img class="feature-img" data-feature-index="1" src="https://source.unsplash.com/400x260/?developer,code" alt="Developer coding" style="width:100%;border-radius:8px;margin-bottom:12px">
+                    <h3>Customizable UI</h3>
+                    <p>Change colors, content, and visuals quickly—no heavy frameworks required.</p>
+                </div>
+                <div class="card">
+                    <img class="feature-img" data-feature-index="2" src="https://source.unsplash.com/400x260/?performance,speed" alt="Performance metrics" style="width:100%;border-radius:8px;margin-bottom:12px">
+                    <h3>Optimized Performance</h3>
+                    <p>Efficient, accessible markup and lightweight CSS to keep load times low.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick stats / trust signals -->
+        <section id="stats" aria-label="Key metrics">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-num" data-target="120">0</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num" data-target="85">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num" data-target="4">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num" data-target="98">0</div>
+                    <div class="stat-label">Satisfaction %</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating contact CTA / Modal trigger -->
+        <button id="contactFab" class="contact-fab" aria-haspopup="dialog" aria-controls="contactModal">Contact us</button>
+
+        <!-- Contact modal -->
+        <div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-panel">
+                <button class="modal-close" aria-label="Close">×</button>
+                <h3>Get in touch</h3>
+                <p>Tell us about your project and we'll get back within one business day.</p>
+                <form id="contactForm" action="/api/contact" method="POST" data-mailto="nwekezembudike@gmail.com">
+                    <label>Full name<input type="text" name="name" required></label>
+                    <label>Email<input type="email" name="email" required></label>
+                    <label>Message<textarea name="message" rows="4" required></textarea></label>
+                    <div style="display:flex;gap:.5rem;margin-top:.5rem">
+                        <button type="submit">Send</button>
+                        <button type="button" id="modalCancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img class="service-img" data-service-index="0" src="https://source.unsplash.com/400x260/?landing,marketing" alt="Custom landing pages">
+                    <h3>Custom Landing Pages</h3>
+                    <p>Design and build high-converting landing pages optimized for speed and clarity.</p>
+                </div>
+                <div class="service-card">
+                    <img class="service-img" data-service-index="1" src="https://source.unsplash.com/400x260/?web,app" alt="Web app development">
+                    <h3>Web Apps & MVPs</h3>
+                    <p>Small, focused web apps and MVPs that validate ideas fast without heavy overhead.</p>
+                </div>
+                <div class="service-card">
+                    <img class="service-img" data-service-index="2" src="https://source.unsplash.com/400x260/?performance,optimization" alt="Performance optimization">
+                    <h3>Performance Optimization</h3>
+                    <p>Audit and optimize your front-end for faster load times and better rankings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h2>What clients say</h2>
+            <div class="testimonials">
+                <blockquote class="testimonial active">“Sanchez Tech delivered a landing page that doubled our signups in two weeks.”<cite>— A. Customer, Founder</cite></blockquote>
+                <blockquote class="testimonial">“Fast, clear communication and a beautiful result.”<cite>— B. Client, Product Lead</cite></blockquote>
+                <blockquote class="testimonial">“Our site speed is much better and conversions improved.”<cite>— C. VP Engineering</cite></blockquote>
+            </div>
+        </section>
+
+        <!-- Portfolio CTA -->
+        <section id="portfolio-cta" class="card">
+            <h2>Explore Our Full Portfolio</h2>
+            <p>Discover our complete range of projects, from stunning landing pages to powerful web apps. See how we've helped businesses grow and succeed.</p>
+            <div style="text-align:center;margin-top:1.5rem">
+                <a href="main.html" class="btn-primary" style="font-size:1.1rem;padding:14px 32px">View Full Portfolio →</a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">How long does a landing page take?</button>
+                    <div class="faq-a">Typical delivery is 3–10 business days depending on scope.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Can you connect analytics and forms?</button>
+                    <div class="faq-a">Yes — we set up analytics, form providers and event tracking as needed.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Do you provide maintenance?</button>
+                    <div class="faq-a">We offer optional monthly maintenance and updates. Contact us for a plan.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="get-started">
+            <h2>Get Started</h2>
+            <p>This is a minimal static site. Follow the steps below to run it locally.</p>
+            <h3>Prerequisites</h3>
+            <ul>
+                <li>Modern browser (Chrome / Edge / Firefox)</li>
+                <li>Optional: Python 3 or Node.js for a local server</li>
+            </ul>
+            <h3>Run locally (quick)</h3>
+            <p>Using Python 3 (PowerShell):</p>
+            <pre><code>python -m http.server 8000</code></pre>
+            <p>Then open <a href="http://localhost:8000">http://localhost:8000</a> in your browser.</p>
+            <p>Or with Node (if installed):</p>
+            <pre><code>npm install -g http-server
+http-server -p 8080</code></pre>
+            <h3>Development</h3>
+            <ul>
+                <li>Use the VS Code Live Server extension for live reload while editing</li>
+                <li>Save files and refresh to see changes</li>
+            </ul>
+            <h3>Deploy</h3>
+            <p>Deploy to GitHub Pages, Netlify, Vercel, or any static hosting platform.</p>
+            <h3>Troubleshooting</h3>
+            <ul>
+                <li>Port in use? try a different port (e.g., 8001)</li>
+                <li>Check browser console for 404s if assets fail to load</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have questions or want help, call us at <a href="tel:09071067665">09071067665</a>.</p>
+            <p>Message us on WhatsApp: <a href="https://wa.me/2349071067665" target="_blank" rel="noopener">Start chat on WhatsApp</a></p>
+            <p>Or email us at <a href="mailto:nwekezembudike@gmail.com">nwekezembudike@gmail.com</a>.</p>
+            <p style="font-size:.9rem;color:rgba(229,231,235,.7)">Note: WhatsApp link assumes international number +2349071067665. Update if your country code differs.</p>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Sanchez Tech. All rights reserved.
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // feature card reveal
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, {
+            threshold: 0.2
+        });
+        cards.forEach(c => observer.observe(c));
+        // Ensure carousel images load and improve SEO by setting an OG image dynamically (first carousel img)
+        window.addEventListener('load', () => {
+            const firstImg = document.querySelector('.carousel-inner img');
+            if (firstImg) {
+                const og = document.querySelector('meta[property="og:image"]');
+                if (og) og.setAttribute('content', firstImg.src);
+            }
+        });
+    </script>
+</body>
+
+</html>
